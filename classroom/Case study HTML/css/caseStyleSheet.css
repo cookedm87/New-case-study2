@@ -33,9 +33,85 @@ html{
 /*-----------------------------------------------------------
                         HOME STYLES
 ------------------------------------------------------------*/
-h1{
-    color: blue;
+/*Make image and video responsive to container and screen size*/
+
+img, video{
+    width: 100%;
 }
+
+body{
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    color: #444;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;/*stops anything larger than the screen from creating a scroll bar on the horizontal axis*/
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 100px auto;/* easy way to centre */
+}
+
+.homeBgImage{
+    position: relative;
+    background-image: url(../../HTML5-master/HTML5-master/Case_Study/img/trainerHomePage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    border-bottom: 15px solid rgba(53, 38, 80, 0.8);
+    background-attachment: fixed;
+}
+
+.logoC{
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    width: 45px;
+    position: fixed;
+    z-index: 110;
+}
+
+.fa-shopping-basket{
+    font-size: 4em;
+    color: rgba(194, 166, 255, 1);
+}
+
+.cartIcon{
+    position:absolute;
+    top: 15px;
+    left: 45vw;
+    width: 45px;
+    z-index: 115;
+}
+
+.navC{
+    color: white;
+    height: auto;
+    width: 100%;
+    background-color: rgba(44, 31, 61, 1);
+    position: fixed;
+    border-bottom: 2px solid rgba(194, 166, 255, 1);
+    z-index: 100;
+}
+
+.navBtn{
+    font-size: 2.5em;
+    display: block;
+    width: 20%;
+    margin: 0 4vw 0 73vw;
+    padding: 7px 3%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+/*h1{
+    color: blue;
+}*/
+
 
 /*-----------------------------------------------------------
              MOBILE STYLES - 568PX RESOLUTION

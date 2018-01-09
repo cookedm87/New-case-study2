@@ -13,49 +13,52 @@ THIS IS A FICTIONAL CASE STUDY WEBSITE FOR TRAINING PURPOSES.
         <meta charset="utf-8">
         <!--TELLS MOBILE PHONES NOT TO LIE ABOUT THEIR TRUE WIDTH-->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/htmlNormalize.css">
         <link rel="stylesheet" type="text/css" href="css/caseStyleSheet.css">
     </head>
     <body>
-        <section>
+        <section id="home" class="section1 homeBgImage">
             <header>
-                <div>
+                <!--<div>
                     <img src="../HTML5-master/HTML5-master/Case_Study/img/trainerHomePage.jpg" alt="homepage background image"/>
-                </div>
+                </div>-->
                 
-                <div>
-                    <img src="../HTML5-master/HTML5-master/Case_Study/img/logo.png" alt="Company logo"/>
+                <div class="logoC">
+                    <a href="#home"><img src="../HTML5-master/HTML5-master/Case_Study/img/logo.png" alt="Company logo"/></a>
                 </div>
-               
+                <div class="cartIcon">
+                    <a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                </div>
                 <!--NAV SECTION START-->
-                <div>
+                <div class="navC">
                     
+                    <span class="navBtn">&#9776;</span>
                     <nav>
-                        <ul>
+                        <ul id="mainMenu" class="menuItems">
                             <li><a href="#home">HOME</a></li>
                             <li><a href="#products">PRODUCTS</a></li>
                             <li><a href="#sales">SALES</a></li>
                             <li><a href="#about">ABOUT</a></li>
                             <li><a href="#contact">CONTACT</a></li>
-                            <li><a href="#view cart">VIEW CART</a></li>
+                            <li class="viewCart"><a href="#view cart">VIEW CART</a></li>
                         </ul>
                     </nav>
                 </div>
+            </header>
                 <!--NAV SECTION END-->
                 
-                <div>Exclusive<br>Trainers</div>
-                <div>Limited Edition</div>
-                <div>
-                    <button><a href="#products">NEW ARRIVALS</a></button>
+                <div class="slogan">Exclusive<br>Trainers</div>
+                <div class="mainHeading">Limited Edition</div>
+                <div class="actionB">
+                    <a href="#products"><button class="newCollectionB">NEW ARRIVALS</button></a>
                 </div>
                 
-                <div><i class="fa fa-4x fa-hand-o-right" aria-hidden="true"></i></div>
-            </header>
-        
+                <div class="hand"><i class="fa fa-4x fa-hand-o-right" aria-hidden="true"></i></div>
         </section>
         <!--Products section-->
-        <section>
+        <section id="products" class="container section2">
             <h1>PRODUCTS</h1>
             <p>All the best unique trainers collection at exclusive PRICES!</p>
             <article>
@@ -91,7 +94,7 @@ THIS IS A FICTIONAL CASE STUDY WEBSITE FOR TRAINING PURPOSES.
         <!--Products section finish-->
         
         <!--Sales section start-->
-        <section>
+        <section id="sales" class="container section3">
             <h1>Sales</h1>
             <h3>Take advantage of our sales and get up to 50% DISCOUNT!</h3>
             <article>
@@ -135,24 +138,25 @@ THIS IS A FICTIONAL CASE STUDY WEBSITE FOR TRAINING PURPOSES.
         </section>
         <!--Log in screen finish-->
         <!--About section starts-->
-        <section>
+        <section id="about" class="container section4">
             <h1>ABOUT</h1>
             <p>A brief description of our company and all the services we offer.</p>
             <video controls>
                 <source src="../HTML5-master/HTML5-master/Case_Study/video/trainers.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
+        
+            <aside>
+                <span>At lumière we provide superior customer service, with a commitment to deliver distinctive products of the highest quality. Our trainers and promotional items communicate a classic, retro influence. Keeping a watchful eye on trends and styles, our in-house graphic designers work to create a unique company, group or team identity – one that sets you apart from the rest.</span>
+
+                <span>We are proud of our exlusive range of trainers with limited edition lines to compete with all the top brands in the world.</span>
+
+                <span>Our Premier Delivery service is one of the best delivery services available online and the most affordable.           </span>
+            </aside>
         </section>
-        <aside>
-            <span>At lumière we provide superior customer service, with a commitment to deliver distinctive products of the highest quality. Our trainers and promotional items communicate a classic, retro influence. Keeping a watchful eye on trends and styles, our in-house graphic designers work to create a unique company, group or team identity – one that sets you apart from the rest.</span>
-
-            <span>We are proud of our exlusive range of trainers with limited edition lines to compete with all the top brands in the world.</span>
-
-            <span>Our Premier Delivery service is one of the best delivery services available online and the most affordable.</span>
-        </aside>
         <!--About section finishes-->
         <!--Contact section starts-->
-        <section>
+        <section id="contact" class="container section5">
             <h1>CONTACT</h1>
             <p>Get in touch with us via out contact form, email or phone number.</p>
             <h3>Main office</h3>
@@ -181,17 +185,17 @@ THIS IS A FICTIONAL CASE STUDY WEBSITE FOR TRAINING PURPOSES.
                 </form>
             </aside>
         </section>
-        <div>The map goes here...</div>
+        <div id="map">The map goes here...</div>
         <!--Contact section finishes-->
         <!--footer starts-->
-        <footer>
-            <div>
+        <footer class="container">
+            <div class="socialMedia">
                 <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;
                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;
                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;
                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </div>
-            <div>
+            <div class="footerD">
                 <span>&copy; 2017 lumi&egrave;re</span>
             </div>
         </footer>
