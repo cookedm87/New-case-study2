@@ -1,0 +1,80 @@
+/*-----------------------------------------------------------
+        Lumiere FICTIONAL WEBSITE CSS STYLE SHEET
+------------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+                    WEBSITE COLOUR SCHEME
+------------------------------------------------------------*/
+/*FIRST COLOUR: rgba(195, 168, 255, 1);*/
+/*SECOND COLOUR: rgba(44, 31, 61, 1);*/
+/*THIRD COLOUR: rgba(55, 42, 71, 1);*/
+/*FOURTH COLOUR: #444; - for main content text and heading*/
+
+/*-----------------------------------------------------------
+            Mobile default styles - global styles
+------------------------------------------------------------*/
+
+/*Prevents adjustments of font size after orientation change in IE on windows phones and in IOS*/
+
+html{
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    
+}
+
+/*Apply a natural box model to all elements*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*-----------------------------------------------------------
+                        HOME STYLES
+------------------------------------------------------------*/
+h1{
+    color: blue;
+}
+
+/*-----------------------------------------------------------
+             MOBILE STYLES - 568PX RESOLUTION
+------------------------------------------------------------*/
+
+@media screen and (min-width: 568px){
+    h1{
+        color: green;
+    }
+    
+}
+
+/*-----------------------------------------------------------
+             MOBILE STYLES - 768PX RESOLUTION
+------------------------------------------------------------*/
+
+@media screen and (min-width: 768px){
+     h1{
+        color: red;
+    }
+    
+}
+/*-----------------------------------------------------------
+             MOBILE STYLES - 1024PX RESOLUTION
+------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px){
+     h1{
+        color: orange;
+    }
+    
+}
+/*-----------------------------------------------------------
+             MOBILE STYLES - 1280PX RESOLUTION
+------------------------------------------------------------*/
+
+@media screen and (min-width: 1280px){
+     h1{
+        color: purple;
+    }
+    
+}
