@@ -1,1 +1,0 @@
-# New-case-study2
