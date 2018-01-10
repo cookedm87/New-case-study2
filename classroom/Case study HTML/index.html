@@ -14,13 +14,14 @@ THIS IS A FICTIONAL CASE STUDY WEBSITE FOR TRAINING PURPOSES.
         <!--TELLS MOBILE PHONES NOT TO LIE ABOUT THEIR TRUE WIDTH-->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/htmlNormalize.css">
         <link rel="stylesheet" type="text/css" href="css/caseStyleSheet.css">
     </head>
     <body>
         <section id="home" class="section1 homeBgImage">
-            <header>
+            <header class="headerC">
                 <!--<div>
                     <img src="../HTML5-master/HTML5-master/Case_Study/img/trainerHomePage.jpg" alt="homepage background image"/>
                 </div>-->
@@ -33,7 +34,7 @@ THIS IS A FICTIONAL CASE STUDY WEBSITE FOR TRAINING PURPOSES.
                 </div>
                 <!--NAV SECTION START-->
                 <div class="navC">
-					<button onclick="navButton()" class="navBtn">&#9776;</button>
+					<span id="mainNav" class="navBtn">&#9776;</span>
 					<nav>
 						<ul id="mainMenu" class="menuItems">
 							<li><a href="#home">HOME</a></li>
@@ -146,11 +147,11 @@ THIS IS A FICTIONAL CASE STUDY WEBSITE FOR TRAINING PURPOSES.
             </video>
         
             <aside>
-                <span>At lumière we provide superior customer service, with a commitment to deliver distinctive products of the highest quality. Our trainers and promotional items communicate a classic, retro influence. Keeping a watchful eye on trends and styles, our in-house graphic designers work to create a unique company, group or team identity – one that sets you apart from the rest.</span>
+                <p>At lumière we provide superior customer service, with a commitment to deliver distinctive products of the highest quality. Our trainers and promotional items communicate a classic, retro influence. Keeping a watchful eye on trends and styles, our in-house graphic designers work to create a unique company, group or team identity – one that sets you apart from the rest.</p>
 
-                <span>We are proud of our exlusive range of trainers with limited edition lines to compete with all the top brands in the world.</span>
+                <p>We are proud of our exlusive range of trainers with limited edition lines to compete with all the top brands in the world.</p>
 
-                <span>Our Premier Delivery service is one of the best delivery services available online and the most affordable.           </span>
+                <p>Our Premier Delivery service is one of the best delivery services available online and the most affordable.           </p>
             </aside>
         </section>
         <!--About section finishes-->
@@ -200,6 +201,10 @@ THIS IS A FICTIONAL CASE STUDY WEBSITE FOR TRAINING PURPOSES.
         </footer>
         <!--footer finishes-->
         <!--Linking main and external scripts-->
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
         <script src="JS/MyJS.js"></script>
     </body>
 </html>

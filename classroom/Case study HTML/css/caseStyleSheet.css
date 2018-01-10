@@ -10,6 +10,20 @@
 /*THIRD COLOUR: rgba(55, 42, 71, 1);*/
 /*FOURTH COLOUR: #444; - for main content text and heading*/
 
+/*---------------------FONT FACE STYLES------------------------*/
+
+@font-face {
+    font-family: '28_days';
+    src: url('../fonts/28_days_later-webfont.eot');
+    src: url('../fonts/28_days_later-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/28_days_later-webfont.woff2') format('woff2'),
+         url('../fonts/28_days_later-webfont.woff') format('woff'),
+         url('../fonts/28_days_later-webfont.ttf') format('truetype'),
+         url('../fonts/28_days_later-webfont.svg#28_days_laterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*-----------------------------------------------------------
             Mobile default styles - global styles
 ------------------------------------------------------------*/
@@ -29,6 +43,9 @@ html{
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
 
 /*-----------------------------------------------------------
                         HOME STYLES
@@ -59,24 +76,24 @@ body{
     position: relative;
     background-image: url(../../HTML5-master/HTML5-master/Case_Study/img/trainerHomePage.jpg);
     background-repeat: no-repeat;
+    background-position: center 0;
     background-size: cover;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     border-bottom: 15px solid rgba(53, 38, 80, 0.8);
     background-attachment: fixed;
 }
 
 .logoC{
     position: absolute;
-    top: 10px;
+    top: 3px;
     left: 10px;
     width: 45px;
-    position: fixed;
-    z-index: 110;
+    z-index: 6;
 }
 
 .fa-shopping-basket{
-    font-size: 4em;
+    font-size: 2.5em;
     color: rgba(194, 166, 255, 1);
 }
 
@@ -85,51 +102,105 @@ body{
     top: 15px;
     left: 45vw;
     width: 45px;
-    z-index: 115;
+    z-index: 6;
+    
 }
 
 .navC{
 	position: relative;
     display: inline-block;
-    color: white;
+    color: rgba(55, 42, 71, 1);
     height: auto;
     width: 100%;
     background-color: rgba(44, 31, 61, 1);
-    position: fixed;
+    /*position: fixed;*/
     border-bottom: 2px solid rgba(194, 166, 255, 1);
-    z-index: 100;
 }
 
 .navBtn{
 	position: relative;
     font-size: 2.5em;
     display: inline-block;
-    width: 20%;
-    margin: 0 4vw 0 73vw;
+    width: 12%;
+    margin: 0 4vw 0 79vw;
     padding: 7px 3%;
     text-align: center;
     cursor: pointer;
+    min-width: 100px;
     background-color: rgba(0, 0, 0, 0.5);
+    color: white;
 	
 }   
 
+
 .menuItems{
-	display: none;
+    list-style: none;
+    padding: 1%;
 	position: absolute;
-	right: 100px;
-	background-color: #f9f9f9;
-	min-width: 160px;
-	z-index: 1;
+    margin: 0 4vw 0 79vw;
+	background-color: rgba(55, 42, 71, 1);
+	min-width: 100px;
 }
 
 .menuItems a{
+    font-size: 1.6vw;
 	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
+	padding: 8px 1vw 8px 1vw;
 	display: block;
+    text-align: center;
+    border-top: 3px solid rgba(194, 166, 255, 0.2)
 }
 
-.show{display: block;}
+
+
+.headerC{
+    position: fixed;
+    width:100%;
+    z-index: 5;
+}
+
+.slogan{
+    font-family: "28_days";
+    letter-spacing: 3px;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: right;
+    padding: 150px 4vw 0 0;
+    color: rgb(205,205,205);
+}
+
+.mainHeading{
+    font-family: "Lovers Quarrel", sans-serif;
+    letter-spacing: 3px;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+    display: block;
+    margin: 40vh auto 0 auto;
+    color: rgba(255, 255, 255, 1);
+}
+.hand{
+    position: absolute;
+    top: 680px;
+    left:50px;
+    color: white; 
+}
+
+.menuItems, .hand, .viewCart{
+    display: none;
+}
+.newCollectionB{
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    margin: 10px auto 0 auto;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(194, 166, 255, 0.2);
+    cursor: pointer;
+    outline: none;
+}
+/*.show{display: block;}*/
 /*h1{
     color: blue;
 }*/
@@ -143,7 +214,6 @@ body{
     h1{
         color: green;
     }
-    
 }
 
 /*-----------------------------------------------------------
